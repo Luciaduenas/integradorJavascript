@@ -73,9 +73,13 @@
 
 /* CELULAR  576pc*/
 @media screen and (max-width:576px){
+    .logo{
+        width: 70%;
+    }
 
     .divider{
         height: 30px;
+    }
 
     .store-filter{
         display: flex;

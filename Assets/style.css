@@ -97,6 +97,7 @@ header, .navbar-home{
     display: none;
     /* display: flex; */
     position: absolute;
+    max-width: 100%;
     top: 70px;
     right: 0;
     flex-direction: column;
