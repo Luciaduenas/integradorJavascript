@@ -74,6 +74,9 @@
 /* CELULAR  576pc*/
 @media screen and (max-width:576px){
 
+    .divider{
+        height: 30px;
+
     .store-filter{
         display: flex;
         flex-direction: column;

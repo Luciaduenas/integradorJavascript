@@ -631,6 +631,7 @@ footer{
     color: white;
     background-color: var(--darkpurple);
     position: fixed;
+    text-align: center;
     bottom: 0;
     width: 100%;
     transition: all 0.5s ease-out;
