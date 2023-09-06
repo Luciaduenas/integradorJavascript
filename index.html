@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabby's Dollhouse Store</title>
+    <link rel="icon" type="image/x-icon" href="Assets/Images/home.png">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="Assets/mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+        </style>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar-home">
+        <img src="Assets/Logo.png" alt="Gabbys Dollhouse logo" >
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a href="#store">Store</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <!-- CART -->
+            <label for="cart-toggle" class="cart-label">
+                <i class="fa fa-shopping-cart cart-icon"> <div class="cart-bubble">0</div></i>
+               
+            </label>
+            <input type="checkbox" id="cart-toggle">
+        <div class="cartmenu">
+            <h2>Selected items</h2>
+            <div class="cart-selection">
+                <div class="cart-line"></div>
+                
+                <div class="cart-items">
+                    <!-- <img src="Assets/Products/Action Figures/Baby Box Cat Craft-A-Riffic Room 9,59.jpg" alt="img">
+                    <div class="cart-item-info">
+                      <h4>Enchanting Unicorn Sprinkle Donut Delights</h4>
+                      <p class="price"><span>20</span>usd</p>
+                    </div>
+                    <div class="quantity">
+                         <span class="minus hoverbtn clickedbtn ">-</span>
+                         <span class="qty">1</span>
+                         <span class="plus hoverbtn clickedbtn ">+</span>
+                    </div> -->
+                 </div>
+                 
+                 <div class="cart-line"></div>
+                 <div class="cart-total">
+                    <h4>Total</h4>
+                    <p class="price-total"><span class="total">40</span>usd</p>
+                    </div>
+                <div class="cart-buttons">
+                    <button class="hoverbtn clickedbtn chekout-btn">Buy items</button>
+                    <button class="hoverbtn clickedbtn  clear-btn">Clear cart</button>
+                </div>   
+        </div>  
+        </div>    
+        <div class="overlay"></div>
+        </nav> 
+
+    
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="logo-container">
+              <img class="logo translateY" src="Assets/Logo.png" alt="Gabby´s Dollhouse logo">
+              <img class="airplane translateX" src="Assets/plane.png" alt="online store plane">
+             </div>
+             <img class="house" src="Assets/Images/home.png" alt="gabbys dollhouse">
+        
+        </section>
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+
+        <!-- STORE -->
+        <section id="store">
+            <div class="storetitle">
+                <h2>Welcome to</h2>
+                <h1>Gabby´s Dollhouse online store</h1>
+                <h2>Shop online for all thing Gabby!</h2>
+            </div>
+            <div class="store-filter">
+                <button class="category hoverbtn">Show All</button>
+                <button class="category hoverbtn" data-category="Plush Toys">Plush Toys</button>
+                <button class="category hoverbtn" data-category="Action Figures">Action Figures</button>
+                <button class="category hoverbtn" data-category="Board Games" >Board Games</button>
+            </div>
+            <div class="store-products">
+                <!-- <div class="product-card">
+                    <img src="Assets/Products/Action Figures/Baby Box Cat Craft-A-Riffic Room 9,59.jpg" alt="Baby Box Cat Craft-A-Riffic">
+                    <h3 class="name">Baby Box Cat Craft-A-Riffic</h3>
+                    <h3 class="price">$ 9,59 <span>usd</span></h3>
+                    <button class="add-btn hoverbtn">Add to Cart</button>
+                </div> -->
+            </div>
+            <button class="show-more-btn hoverbtn">Show more</button>
+        </section>
+
+        <!-- DIVIDER -->
+        <div class="divider"></div>
+
+        <!-- ABOUT -->
+        <section id="about">
+        <h2 class="section-title">About Us</h2>
+        <p>We are Gabby´s Dollhouse biggest online store in the US. Fans of the show, like you, we do all things Gabby with extra love to make sure everything is meow-mazing!</p>
+        <img src="Assets/Images/9935493064ff37691a178cefe86974fe.jpg" alt="gabby and friends">
+    </section>
+
+            <!-- DIVIDER -->
+            <div class="divider"></div>
+
+         <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+        <img src="Assets/Images/Gabbys-Dollhouse-PNG-Picture.png" class="cat-fairy" alt="cat-fairy">
+
+        <form class="form" id="form" action="contact">
+            <label for="input-name"></label>
+            <input type="text" name="name" id="input-name" placeholder="Name"id="name">
+            <label for="input-email"></label>
+            <input type="email" name="email" id="input-email" placeholder="e-mail" id="email">
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Write your message here"></textarea>
+            <input class="hoverbtn clickedbtn submit-btn" type="submit" value="Send" id="submit-btn">
+            <p class="hidden" id="form-message"></p>
+        </form>
+        <img src="Assets/Images/gabbysplayhouse-gabby.png" alt="Gabby">
+    </div>
+    </section>    
+ 
+                <!-- DIVIDER -->
+                <div class="divider"></div>
+        
+    </main>
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="social">
+            <h4>Connect with us!</h4>
+            <div class="social-links">
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+           <a href="#" target="_blank"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Gabby´s store. All rights reserved. Designed with <i class="fa-solid fa-heart"></i> by Lucía Dueñas</p>
+        
+    </footer>
+    <div class="add-modal"></div>
+    <script src="Assets/data.js"></script>
+    <script src="Assets/index.js"></script>
+</body>
+
+</html>           
