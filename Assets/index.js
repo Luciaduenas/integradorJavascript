@@ -44,7 +44,7 @@ const createProductTemplate = (product) => {
                     data-id="${id}"
                     data-name="${name}"
                     data-price="${price}"
-                    data-cardImg="${cardImg}" >Add to Cart</button>
+                    data-cardimg="${cardImg}" >Add to Cart</button>
                 </div>`
 }
 
@@ -177,10 +177,10 @@ const closeOnClick = (e) => {
   };
 
   const createCartProductTemplate = (cartProduct) => {
-    const { id, name, price, cardImg, quantity } = cartProduct;
+    const { id, name, price, cardimg, quantity } = cartProduct;
     return`
     <div class="cart-item">
-                    <img src="${cardImg}">
+                    <img src="${cardimg}">
                     <div class="cart-item-info">
                       <h4>${name}</h4>
                       <p class="price"><span>${price}</span>usd</p>
@@ -248,12 +248,12 @@ const updateCartState = () => {
 };
 
 // Voy a convertir el objeto recibido al apretar el boton buy de la card en otro para manipularlo en el cart
-const createProductData = ({ id, name, price, cardImg}) => {
+const createProductData = ({ id, name, price, cardimg}) => {
   return {
     id,
     name,
     price,
-    cardImg,
+    cardimg,
   };
 };
 
@@ -386,13 +386,23 @@ const isValidName = (input) => {
     return valid;
   }
 
+const checkEmail = (input) =>{  
+  const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+  return re.test(input.value.trim());
+};
+
 const isValidEmail = (input) => {
   let valid = false;
-  if (isEmpty(input)) {
+  if (!checkEmail(input)) {
         formMessage.classList.remove("hidden")
         formMessage.innerHTML='Please enter a valid email'
         return;
     }
+    if (isEmpty(input)) {
+      formMessage.classList.remove("hidden")
+      formMessage.innerHTML='Please enter a valid email'
+      return;
+  }  
   
     valid = true;
     return valid;
